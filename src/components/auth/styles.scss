@@ -1,0 +1,29 @@
+.login {
+    padding: 20px;
+
+    &__logo {
+        text-align: center;
+    }
+
+    &__heading {
+        h3 {
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        margin: 20px 0;
+    }
+}
+
+.register {
+    padding: 20px;
+
+    &__heading {
+        h3 {
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        margin: 20px 0;
+    }
+}

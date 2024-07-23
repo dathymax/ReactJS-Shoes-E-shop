@@ -10,10 +10,11 @@
 
     &__navigation {
         background-color: #000;
+        color: #fff;
 
         &-inner {
-            max-width: 1230px;
-            width: 1230px;
+            max-width: var(--container);
+            width: var(--container);
             margin: auto;
             display: flex;
             align-items: center;
@@ -28,11 +29,31 @@
         ul {
             margin: 0 40px;
             padding: 0 20px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: relative;
+                height: 20px;
+                width: 1px;
+                background-color: #fff;
+            }
         }
 
         ul li {
             list-style: none;
             display: inline-block;
+        }
+    }
+
+    &__search {
+        input {
+            width: 170px;
+
+            &::placeholder {
+                font-weight: 600;
+                font-size: 14px;
+            }
         }
     }
 }

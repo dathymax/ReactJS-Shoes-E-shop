@@ -1,0 +1,38 @@
+.banner {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    &-text {
+        max-width: var(--container);
+        width: var(--container);
+        position: absolute;
+        left: var(--margin-by-container);
+        margin: auto;
+        text-align: left;
+        color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+
+        h1 {
+            font-size: 96px;
+            line-height: 150px;
+
+            p {
+                &:first-child {
+                    font-family: "Playfair Display", serif;
+                }
+
+                &:nth-child(2) {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &>p {
+            font-size: 20px;
+        }
+    }
+}
