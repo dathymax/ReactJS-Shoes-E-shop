@@ -42,7 +42,9 @@
 
         ul li {
             list-style: none;
-            display: inline-block;
+            display: inline-flex;
+            gap: 10px;
+            cursor: pointer;
         }
     }
 
@@ -51,8 +53,9 @@
             width: 170px;
 
             &::placeholder {
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 14px;
+                letter-spacing: 1px;
             }
         }
     }

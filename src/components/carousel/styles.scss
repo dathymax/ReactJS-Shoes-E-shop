@@ -1,0 +1,61 @@
+.slide {
+    &__container {
+        position: relative;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &__slide {
+        &--btn {
+            border: 1px solid lightgray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            font-size: 15px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background-color: var(--primary);
+                color: #fff;
+            }
+
+            &.btn-left {
+                position: absolute;
+                left: -5%;
+                top: 50%;
+            }
+
+            &.btn-right {
+                position: absolute;
+                right: -5%;
+                top: 50%;
+            }
+
+            &-bot {
+                background-color: transparent;
+                border: 1px solid transparent;
+                font-size: 15px;
+                cursor: pointer;
+                transition: all 0.2s ease-in;
+                padding: 15px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    border: 1px solid lightgray;
+                }
+            }
+        }
+    }
+}

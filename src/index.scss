@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
     --primary: #5E59FF;
@@ -129,6 +132,7 @@ body {
 
     &-description {
         font-size: 16px;
+        margin: 16px 0;
     }
 
     &-heading {
@@ -139,10 +143,11 @@ body {
 
     &-link {
         color: var(--primary);
+        font-size: 14px;
+        cursor: pointer;
 
         &:hover {
             text-decoration: underline;
-            font-size: 14px;
         }
     }
 
@@ -150,7 +155,17 @@ body {
         color: var(--primary);
     }
 
-    &-title {
+    &-32 {
         font-size: 32px;
+    }
+
+    &-24 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &-price {
+        font-size: 24px;
+        font-weight: 700;
     }
 }

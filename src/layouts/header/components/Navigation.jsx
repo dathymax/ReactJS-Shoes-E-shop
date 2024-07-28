@@ -6,6 +6,7 @@ import Favourite from './Favourite'
 import Cart from './Cart'
 import fire from "../../../assets/icon/Fire.png"
 import AuthService from './Auth'
+import arrowDown from "../../../assets/icon/arrow-down.png"
 
 const navItems = [
     {
@@ -19,6 +20,8 @@ const navItems = [
     { label: "Women", key: "women" },
     { label: "Kids", key: "kids" },
 ]
+
+const noArrowKeys = ["newArrived"];
 
 const Navigation = () => {
     const navigate = useNavigate();
@@ -34,9 +37,18 @@ const Navigation = () => {
 
                 <ul className='flex-1 flex items-center gap-2'>
                     {navItems.map(item => {
+                        if (noArrowKeys.includes(item.key)) {
+                            return (
+                                <li key={item.key}>
+                                    {item.label}
+                                </li>
+                            )
+                        }
+
                         return (
                             <li key={item.key}>
                                 {item.label}
+                                <img src={arrowDown} alt="Arrow down" />
                             </li>
                         )
                     })}
