@@ -5,4 +5,22 @@
         width: var(--container);
         margin: auto;
     }
+
+    &__categories {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 16px;
+    }
+
+    &__gallery {
+        img {
+            border-radius: 8px;
+        }
+    }
+
+    &__news {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 16px;
+    }
 }

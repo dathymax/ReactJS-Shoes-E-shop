@@ -43,6 +43,12 @@ body {
     }
 }
 
+.container {
+    width: var(--container);
+    max-width: var(--container);
+    margin: auto;
+}
+
 .cursor {
     &-pointer {
         cursor: pointer;
@@ -155,17 +161,30 @@ body {
         color: var(--primary);
     }
 
-    &-32 {
-        font-size: 32px;
+    &-20 {
+        font-size: 20px;
+        font-weight: 600;
     }
 
     &-24 {
         font-size: 24px;
         font-weight: 600;
+        margin: 20px 0;
+    }
+
+    &-32 {
+        font-size: 32px;
+        font-weight: 700;
     }
 
     &-price {
         font-size: 24px;
         font-weight: 700;
+    }
+
+    &-date {
+        color: #8D8D8D;
+        font-size: 16px;
+        margin: 16px 0;
     }
 }

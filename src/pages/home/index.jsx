@@ -7,6 +7,20 @@ import shoe1 from "../../assets/shoes/best-selling/shoe-1.png"
 import shoe2 from "../../assets/shoes/best-selling/shoe-2.png"
 import shoe3 from "../../assets/shoes/best-selling/shoe-3.png"
 import shoe4 from "../../assets/shoes/best-selling/shoe-4.png"
+import category1 from "../../assets/categories/nike.png"
+import category2 from "../../assets/categories/adidas.png"
+import category3 from "../../assets/categories/converse.png"
+import category4 from "../../assets/categories/puma.png"
+import category5 from "../../assets/categories/reebook.png"
+import category6 from "../../assets/categories/asics.png"
+import CategoryItem from '../../components/category/Item'
+import discount from "../../assets/discount.png"
+import gallery1 from "../../assets/gallery/gallery-1.png"
+import gallery2 from "../../assets/gallery/gallery-2.png"
+import news1 from "../../assets/news/news-1.png"
+import news2 from "../../assets/news/news-2.png"
+import news3 from "../../assets/news/news-3.png"
+import NewsItem from '../../components/news/Item'
 
 const HomePage = () => {
     const shoes = [
@@ -14,26 +28,85 @@ const HomePage = () => {
         { id: 2, shoeName: "Converse X Rick Owens", price: 220, isNew: false, isFavorite: true, isSoldOut: false, img: shoe2 },
         { id: 3, shoeName: "Converse Chuck 70 Fall Tone", price: 320, isNew: false, isFavorite: false, isSoldOut: true, img: shoe3 },
         { id: 4, shoeName: "Puma X Nanamica Clyde Gtx", price: 420, isNew: true, isFavorite: false, isSoldOut: false, img: shoe4 },
-    ]
+    ];
+    const categories = [
+        { id: 1, categoryName: "Nike", shoeCount: 1280, img: category1 },
+        { id: 2, categoryName: "Adidas", shoeCount: 1280, img: category2 },
+        { id: 3, categoryName: "Converse", shoeCount: 1280, img: category3 },
+        { id: 4, categoryName: "Puma", shoeCount: 1280, img: category4 },
+        { id: 5, categoryName: "Reebook", shoeCount: 1280, img: category5 },
+        { id: 6, categoryName: "ASICS", shoeCount: 1280, img: category6 },
+    ];
+    const news = [
+        { id: 1, date: new Date(), title: "Where to hunt number 23: Noah x PUMA Pro Star 'White and Green'", img: news1 },
+        { id: 2, date: new Date(), title: "Information leaked about the GmbH x ASICS Gel-Kayano Legacy 'Cilantro' & 'White Black' collection", img: news2 },
+        { id: 3, date: new Date(), title: "25% off on Friends & Family Sale at PUMA", img: news3 },
+    ];
 
     return (
         <section className='home'>
             <Banner />
 
-            <div className="home__carousel">
+            <div className="container">
                 <Carousel slideTitle={"Best Selling"}>
                     {shoes.map(shoe => {
                         return (
-                            <ShoeCard shoe={shoe} />
+                            <ShoeCard key={shoe.id} shoe={shoe} />
                         )
                     })}
                 </Carousel>
-            </div>
 
-            <div className="h-2"></div>
+                <div className="h-2"></div>
 
-            <div>
                 <h2 className='text-24'>Categories</h2>
+
+                <div className="home__categories">
+                    {categories.map(category => {
+                        return (
+                            <CategoryItem key={category.id} category={category} />
+                        )
+                    })}
+                </div>
+
+                <div className="h-4"></div>
+
+                <img src={discount} alt="Discount banner" />
+
+                <Carousel slideTitle={"New Arrived"}>
+                    {shoes.map(shoe => {
+                        return (
+                            <ShoeCard key={shoe.id} shoe={shoe} />
+                        )
+                    })}
+                </Carousel>
+
+                <Carousel slideTitle={"Flash Sale"}>
+                    {shoes.map(shoe => {
+                        return (
+                            <ShoeCard key={shoe.id} shoe={shoe} />
+                        )
+                    })}
+                </Carousel>
+
+                <h2 className='text-24'>Gallery</h2>
+
+                <div className="home__gallery flex items-center gap-1">
+                    <img src={gallery1} alt="Gallery 1" />
+                    <img src={gallery2} alt="Gallery 2" />
+                </div>
+
+                <div className="h-3"></div>
+
+                <h2 className='text-24'>News</h2>
+
+                <div className="home__news">
+                    {news.map(newsItem => {
+                        return (
+                            <NewsItem key={newsItem.id} news={newsItem} />
+                        )
+                    })}
+                </div>
+
             </div>
         </section>
     )
