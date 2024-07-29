@@ -71,6 +71,10 @@ body {
     &-4 {
         height: 4rem;
     }
+
+    &-5 {
+        height: 5rem;
+    }
 }
 
 .flex {
@@ -159,6 +163,11 @@ body {
 
     &-primary {
         color: var(--primary);
+    }
+
+    &-14 {
+        font-size: 14px;
+        color: #BBBBBB;
     }
 
     &-20 {

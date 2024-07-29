@@ -21,6 +21,10 @@ import news1 from "../../assets/news/news-1.png"
 import news2 from "../../assets/news/news-2.png"
 import news3 from "../../assets/news/news-3.png"
 import NewsItem from '../../components/news/Item'
+import service1 from "../../assets/services/service-1.png"
+import service2 from "../../assets/services/service-2.png"
+import service3 from "../../assets/services/service-3.png"
+import service4 from "../../assets/services/service-4.png"
 
 const HomePage = () => {
     const shoes = [
@@ -42,6 +46,12 @@ const HomePage = () => {
         { id: 2, date: new Date(), title: "Information leaked about the GmbH x ASICS Gel-Kayano Legacy 'Cilantro' & 'White Black' collection", img: news2 },
         { id: 3, date: new Date(), title: "25% off on Friends & Family Sale at PUMA", img: news3 },
     ];
+    const services = [
+        { id: 1, img: service1, title: "Best Quality Guarantee", content: "Product that arrived at your door already passed our Quality Control procedure." },
+        { id: 2, img: service2, title: "Easy Payment Choice", content: "Various payment choice will give an ease every time you purchase our product" },
+        { id: 3, img: service3, title: "On-Time Delivery", content: "We will make sure that all product that you purchased will arrived at your address" },
+        { id: 4, img: service4, title: "Free Return", content: "100% refund when there is a product quality problem" },
+    ]
 
     return (
         <section className='home'>
@@ -72,6 +82,8 @@ const HomePage = () => {
 
                 <img src={discount} alt="Discount banner" />
 
+                <div className="h-3"></div>
+
                 <Carousel slideTitle={"New Arrived"}>
                     {shoes.map(shoe => {
                         return (
@@ -80,6 +92,8 @@ const HomePage = () => {
                     })}
                 </Carousel>
 
+                <div className="h-1"></div>
+
                 <Carousel slideTitle={"Flash Sale"}>
                     {shoes.map(shoe => {
                         return (
@@ -87,6 +101,8 @@ const HomePage = () => {
                         )
                     })}
                 </Carousel>
+
+                <div className="h-2"></div>
 
                 <h2 className='text-24'>Gallery</h2>
 
@@ -107,6 +123,22 @@ const HomePage = () => {
                     })}
                 </div>
 
+                <div className="h-3"></div>
+
+                <div className="home__services">
+                    {services.map(service => {
+                        return (
+                            <div key={service.id} className="home__service">
+                                <img src={service.img} alt="Service" />
+
+                                <p>{service.title}</p>
+                                <span>{service.content}</span>
+                            </div>
+                        )
+                    })}
+                </div>
+
+                <div className="h-5"></div>
             </div>
         </section>
     )

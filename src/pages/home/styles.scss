@@ -23,4 +23,29 @@
         grid-template-columns: auto auto auto;
         gap: 16px;
     }
+
+    &__services {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 16px;
+    }
+
+    &__service {
+        img {
+            width: 100%;
+            height: 280px;
+            border-radius: 8px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        span {
+            font-size: 14px;
+            color: #1B1B1B;
+        }
+    }
 }
