@@ -41,9 +41,9 @@ const LayoutFooter = () => {
                     <div className="footer__contact">
                         <img src={logo} alt="Logo footer" />
                         <div className="h-1"></div>
-                        <p className='text-14'>Address: 380 Quan Hoa, Cau Giay, Hanoi</p>
-                        <p className='text-14'>Hotline: 1800.808.88</p>
-                        <p className='text-14'>Email: info@sneakers.vn</p>
+                        <p className='text-14-bbb'>Address: 380 Quan Hoa, Cau Giay, Hanoi</p>
+                        <p className='text-14-bbb'>Hotline: 1800.808.88</p>
+                        <p className='text-14-bbb'>Email: info@sneakers.vn</p>
                         <FooterSocials />
                     </div>
 
@@ -54,7 +54,7 @@ const LayoutFooter = () => {
 
                                 {footerLink.items.map(item => {
                                     return (
-                                        <li key={item.key} className='footer__link text-14'>{item.label}</li>
+                                        <li key={item.key} className='footer__link text-14-bbb'>{item.label}</li>
                                     )
                                 })}
                             </ul>

@@ -26,13 +26,14 @@ import service2 from "../../assets/services/service-2.png"
 import service3 from "../../assets/services/service-3.png"
 import service4 from "../../assets/services/service-4.png"
 
+export const shoes = [
+    { id: 1, shoeName: "Nike Zoom Kd Iii", price: 120, isNew: true, isFavorite: false, isSoldOut: false, img: shoe1 },
+    { id: 2, shoeName: "Converse X Rick Owens", price: 220, isNew: false, isFavorite: true, isSoldOut: false, img: shoe2 },
+    { id: 3, shoeName: "Converse Chuck 70 Fall Tone", price: 320, isNew: false, isFavorite: false, isSoldOut: true, img: shoe3 },
+    { id: 4, shoeName: "Puma X Nanamica Clyde Gtx", price: 420, isNew: true, isFavorite: false, isSoldOut: false, img: shoe4 },
+];
+
 const HomePage = () => {
-    const shoes = [
-        { id: 1, shoeName: "Nike Zoom Kd Iii", price: 120, isNew: true, isFavorite: false, isSoldOut: false, img: shoe1 },
-        { id: 2, shoeName: "Converse X Rick Owens", price: 220, isNew: false, isFavorite: true, isSoldOut: false, img: shoe2 },
-        { id: 3, shoeName: "Converse Chuck 70 Fall Tone", price: 320, isNew: false, isFavorite: false, isSoldOut: true, img: shoe3 },
-        { id: 4, shoeName: "Puma X Nanamica Clyde Gtx", price: 420, isNew: true, isFavorite: false, isSoldOut: false, img: shoe4 },
-    ];
     const categories = [
         { id: 1, categoryName: "Nike", shoeCount: 1280, img: category1 },
         { id: 2, categoryName: "Adidas", shoeCount: 1280, img: category2 },
@@ -51,7 +52,7 @@ const HomePage = () => {
         { id: 2, img: service2, title: "Easy Payment Choice", content: "Various payment choice will give an ease every time you purchase our product" },
         { id: 3, img: service3, title: "On-Time Delivery", content: "We will make sure that all product that you purchased will arrived at your address" },
         { id: 4, img: service4, title: "Free Return", content: "100% refund when there is a product quality problem" },
-    ]
+    ];
 
     return (
         <section className='home'>
