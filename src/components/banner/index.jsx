@@ -3,8 +3,11 @@ import banner from "../../assets/banner/BannerImage.png"
 import "./styles.scss"
 import { Button } from 'antd'
 import arrowRight from "../../assets/icon/ArrowRight.png"
+import { useNavigate } from 'react-router-dom'
 
 const Banner = () => {
+    const navigate = useNavigate();
+
     return (
         <div className='banner'>
             <img src={banner} alt="Banner" />
@@ -23,6 +26,7 @@ const Banner = () => {
                     size='large'
                     style={{ width: 295 }}
                     className='flex items-center'
+                    onClick={() => navigate("/search")}
                 >
                     Explore now
                     <img src={arrowRight} alt="Arrow right" style={{ width: 16 }} />

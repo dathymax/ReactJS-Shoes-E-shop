@@ -1,0 +1,27 @@
+.product {
+    padding: 80px 0;
+
+    &__details {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 110px;
+    }
+
+    &__images {
+        display: flex;
+        align-items: start;
+        gap: 16px;
+
+        &-small {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+
+    &__informations {
+        flex: 1;
+    }
+}
