@@ -12,7 +12,7 @@ const NewsItem = ({ news = {} }) => {
             <p className="text-date">
                 {newsDate} | {newsTime}
             </p>
-            <p className='text-20'>{news.title}</p>
+            <p className='text-20-bold'>{news.title}</p>
             <p className='text-description'>See more <FaArrowRight /></p>
         </div>
     )

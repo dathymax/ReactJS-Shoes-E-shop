@@ -1,0 +1,25 @@
+.common {
+    &__tabs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__tab {
+        color: #767676;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 0;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+        transition: all 0.1s ease-in;
+        font-weight: 600;
+        font-size: 24px;
+
+        &.active {
+            color: #1B1B1B;
+            border-color: #000;
+        }
+    }
+}

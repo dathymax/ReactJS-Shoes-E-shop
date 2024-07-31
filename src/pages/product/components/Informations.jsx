@@ -27,7 +27,7 @@ const ProductInformations = () => {
 
             <Divider />
 
-            <p className='text-16 font-bold mb-2'>Description</p>
+            <p className='text-16 font-bold mb-1'>Description</p>
             <p className='text-14-5f leading-1' style={{ lineHeight: "20px" }}>
                 The Nike Air Force 1 is a blank canvas. It is the perfect canvas to express your personal style. Whether you want to dress it up with a suit or dress it down with jeans, the Air Force 1 is always a good choice.
                 <br />

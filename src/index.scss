@@ -89,22 +89,16 @@ body {
         align-items: center;
     }
 
+    &.items-stretch {
+        align-items: stretch;
+    }
+
     &.justify-center {
         justify-content: center;
     }
 
     &.justify-between {
         justify-content: space-between;
-    }
-}
-
-.gap {
-    &-1 {
-        gap: 1rem;
-    }
-
-    &-2 {
-        gap: 2rem;
     }
 }
 
@@ -115,6 +109,16 @@ body {
 
     &-bold {
         font-weight: bold;
+    }
+}
+
+.gap {
+    &-1 {
+        gap: 1rem;
+    }
+
+    &-2 {
+        gap: 2rem;
     }
 }
 
@@ -130,44 +134,110 @@ body {
 
 .m {
     &-1 {
-        height: 1rem;
+        margin: 1rem;
     }
 
     &-2 {
-        height: 2rem;
+        margin: 2rem;
     }
 
     &-3 {
-        height: 3rem;
+        margin: 3rem;
     }
 
     &-4 {
-        height: 4rem;
+        margin: 4rem;
     }
 
     &-5 {
-        height: 5rem;
+        margin: 5rem;
     }
 
     &b {
         &-1 {
-            height: 1rem;
+            margin-bottom: 1rem;
         }
 
         &-2 {
-            height: 2rem;
+            margin-bottom: 2rem;
         }
 
         &-3 {
-            height: 3rem;
+            margin-bottom: 3rem;
         }
 
         &-4 {
-            height: 4rem;
+            margin-bottom: 4rem;
         }
 
         &-5 {
-            height: 5rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &t {
+        &-1 {
+            margin-top: 1rem;
+        }
+
+        &-2 {
+            margin-top: 2rem;
+        }
+
+        &-3 {
+            margin-top: 3rem;
+        }
+
+        &-4 {
+            margin-top: 4rem;
+        }
+
+        &-5 {
+            margin-top: 5rem;
+        }
+    }
+
+    &y {
+        &-1 {
+            margin-block: 1rem;
+        }
+
+        &-2 {
+            margin-block: 2rem;
+        }
+
+        &-3 {
+            margin-block: 3rem;
+        }
+
+        &-4 {
+            margin-block: 4rem;
+        }
+
+        &-5 {
+            margin-block: 5rem;
+        }
+    }
+
+    &x {
+        &-1 {
+            margin-inline: 1rem;
+        }
+
+        &-2 {
+            margin-inline: 2rem;
+        }
+
+        &-3 {
+            margin-inline: 3rem;
+        }
+
+        &-4 {
+            margin-inline: 4rem;
+        }
+
+        &-5 {
+            margin-inline: 5rem;
         }
     }
 }
@@ -180,23 +250,67 @@ body {
 
 .p {
     &-1 {
-        height: 1rem;
+        padding: 1rem;
     }
 
     &-2 {
-        height: 2rem;
+        padding: 2rem;
     }
 
     &-3 {
-        height: 3rem;
+        padding: 3rem;
     }
 
     &-4 {
-        height: 4rem;
+        padding: 4rem;
     }
 
     &-5 {
-        height: 5rem;
+        padding: 5rem;
+    }
+
+    &y {
+        &-1 {
+            padding-block: 1rem;
+        }
+
+        &-2 {
+            padding-block: 2rem;
+        }
+
+        &-3 {
+            padding-block: 3rem;
+        }
+
+        &-4 {
+            padding-block: 4rem;
+        }
+
+        &-5 {
+            padding-block: 5rem;
+        }
+    }
+
+    &x {
+        &-1 {
+            padding-inline: 1rem;
+        }
+
+        &-2 {
+            padding-inline: 2rem;
+        }
+
+        &-3 {
+            padding-inline: 3rem;
+        }
+
+        &-4 {
+            padding-inline: 4rem;
+        }
+
+        &-5 {
+            padding-inline: 5rem;
+        }
     }
 }
 
@@ -230,17 +344,49 @@ body {
         color: var(--primary);
     }
 
+    &-gray {
+        color: #8D8D8D;
+    }
+
+    &-12 {
+        font-size: 12px;
+
+        &-bbb {
+            font-size: 12px;
+            color: #BBBBBB;
+        }
+
+        &-5f {
+            font-size: 12px;
+            color: #5F5F5F;
+        }
+
+        &-8d {
+            font-size: 12px;
+            color: #8D8D8D;
+        }
+    }
+
     &-14 {
         font-size: 14px;
+        line-height: 22px;
 
         &-bbb {
             font-size: 14px;
+            line-height: 22px;
             color: #BBBBBB;
         }
 
         &-5f {
             font-size: 14px;
+            line-height: 22px;
             color: #5F5F5F;
+        }
+
+        &-8d {
+            font-size: 14px;
+            line-height: 22px;
+            color: #8D8D8D;
         }
     }
 
@@ -260,7 +406,16 @@ body {
 
     &-20 {
         font-size: 20px;
-        font-weight: 600;
+
+        &-semi {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        &-bold {
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 
     &-24 {
@@ -281,7 +436,11 @@ body {
 
     &-48 {
         font-size: 48px;
-        font-weight: 600;
+
+        &-bold {
+            font-size: 48px;
+            font-weight: 600;
+        }
     }
 
     &-price {
@@ -293,5 +452,20 @@ body {
         color: #8D8D8D;
         font-size: 16px;
         margin: 16px 0;
+    }
+
+    &-white {
+        color: #fff;
+    }
+
+    &-ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.w {
+    &-full {
+        width: 100%;
     }
 }
