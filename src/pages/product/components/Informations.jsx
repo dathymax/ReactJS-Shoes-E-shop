@@ -1,11 +1,14 @@
-import { Divider } from 'antd'
+import { Button, Divider } from 'antd'
 import React from 'react'
 import { FaRegHeart } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
 import ProductColorPicker from '../../../components/product/ColorPicker';
 import ProductSizePicker from '../../../components/product/SizePicker';
+import { CiZoomIn } from "react-icons/ci";
+import { IoCartOutline } from "react-icons/io5";
+import ProductCounter from '../../../components/product/Counter';
 
-const ProductInformations = () => {
+const ProductInformations = ({ handleOpen = () => { } }) => {
     return (
         <div className='product__informations'>
             <h2 className='text-36'>Nike Template</h2>
@@ -23,6 +26,24 @@ const ProductInformations = () => {
             <div className="flex items-center justify-between">
                 <ProductColorPicker />
                 <ProductSizePicker />
+            </div>
+
+            <div className="flex items-center gap-1 my-1">
+                <ProductCounter />
+                <Button size="large" className='flex items-center' style={{ width: 160 }}>
+                    <CiZoomIn />
+                    Preview
+                </Button>
+                <Button
+                    type="primary"
+                    size="large"
+                    className='flex items-center'
+                    style={{ width: 205 }}
+                    onClick={handleOpen}
+                >
+                    <IoCartOutline />
+                    Add to cart
+                </Button>
             </div>
 
             <Divider />

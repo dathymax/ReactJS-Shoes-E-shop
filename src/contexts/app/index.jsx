@@ -17,6 +17,7 @@ const AppContextProvider = ({ children }) => {
     const [loading, setLoading] = useState(false);
     const [api, contextHolder] = notification.useNotification();
     const [productRate, setProductRate] = useState(0);
+    const [productCartQuantity, setProductCartQuantity] = useState(0);
 
     const openNotiSuccess = (title, description) => {
         api.success({
@@ -42,8 +43,10 @@ const AppContextProvider = ({ children }) => {
         setLoading,
         openNotiError,
         productRate,
-        setProductRate
-    }), [loading, productRate])
+        productCartQuantity,
+        setProductCartQuantity,
+        setProductRate,
+    }), [loading, productRate, productCartQuantity])
 
     return (
         <AppContext.Provider value={values}>

@@ -89,6 +89,33 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 80px;
     }
+
+    &__counter {
+        width: 90px;
+        padding: 13px;
+        border: 1px solid #E8E8E8;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+
+        p {
+            user-select: none;
+            font-size: 18px;
+
+            &.disable {
+                color: lightgray;
+                cursor: not-allowed;
+            }
+        }
+    }
 }
 
 .picker {
