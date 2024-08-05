@@ -56,6 +56,10 @@ body {
 }
 
 .h {
+    &-full {
+        height: 100%;
+    }
+
     &-1 {
         height: 1rem;
     }
@@ -81,12 +85,24 @@ body {
     display: flex;
     align-items: center;
 
+    &.flex-col {
+        flex-direction: column;
+    }
+
     &-1 {
         flex: 1;
     }
 
     &.items-center {
         align-items: center;
+    }
+
+    &.items-start {
+        align-items: flex-start;
+    }
+
+    &.items-end {
+        align-items: flex-end;
     }
 
     &.items-stretch {
@@ -415,6 +431,12 @@ body {
             font-size: 14px;
             line-height: 22px;
             color: #BBBBBB;
+        }
+
+        &-1b {
+            font-size: 14px;
+            line-height: 22px;
+            color: #1B1B1B;
         }
 
         &-5f {
