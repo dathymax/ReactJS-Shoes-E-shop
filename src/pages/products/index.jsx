@@ -13,15 +13,15 @@ const ProductsPage = () => {
 
     return (
         <section className='container products'>
-            <div className="products__search">
-                <h1 className='text-48 font-semi text-center mb-1'>Find your perfect shoes</h1>
+            <div className="content products__search">
+                <h1 className='text-48 font-semi text-center mb-7'>Find your perfect shoes</h1>
                 <div className='products__search-input'>
                     <input type="text" placeholder='Search your product here' />
                     <img src={searchProducts} alt="Search products" />
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 gap-1">
+            <div className="content grid grid-cols-4 gap-1">
                 <div className="col-span-1">
                     <FilterPrices />
                     <FilterBrands />

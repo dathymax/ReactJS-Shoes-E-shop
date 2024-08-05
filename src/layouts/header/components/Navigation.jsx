@@ -35,7 +35,7 @@ const Navigation = () => {
             <div className="header__navigation-inner">
                 <img src={logo} alt="Logo" className='header__navigation-logo cursor-pointer' onClick={handleBackHome} />
 
-                <ul className='flex-1 flex items-center gap-2'>
+                <ul className='flex-1 flex items-center gap-8'>
                     {navItems.map(item => {
                         if (noArrowKeys.includes(item.key)) {
                             return (
@@ -54,7 +54,7 @@ const Navigation = () => {
                     })}
                 </ul>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-8">
                     <Favourite />
 
                     <Cart />

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductInShortcutCart = ({ product = {} }) => {
     return (
-        <div className='mb-2 flex items-stretch' style={{ gap: 12 }}>
+        <div className='mb-8 flex items-stretch' style={{ gap: 12 }}>
             <img src={product.img} alt="Product image" />
 
             <div className="flex-1 flex flex-col items-start justify-between">

@@ -4,7 +4,7 @@ import ShoeCard from '../shoe/Card'
 
 const ListProduct = () => {
     return (
-        <div className='grid grid-cols-3 gap-1'>
+        <div className='grid grid-cols-3 gap-5'>
             {
                 shoes.map(shoe => {
                     return (

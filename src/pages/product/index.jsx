@@ -55,25 +55,27 @@ const ProductPage = () => {
 
     return (
         <section className='container product'>
-            <div className="product__details">
+            <div className="content product__details">
                 <ProductImages />
 
                 <ProductInformations handleOpen={handleOpen} />
             </div>
 
-            <div className="h-4"></div>
+            <div className="content">
+                <Tabs items={productTabs} />
+            </div>
 
-            <Tabs items={productTabs} />
+            <div className="content">
+                <Divider />
 
-            <Divider />
-
-            <Carousel slideTitle={"Recently Viewed"}>
-                {shoes.map(shoe => {
-                    return (
-                        <ShoeCard key={shoe.id} shoe={shoe} />
-                    )
-                })}
-            </Carousel>
+                <Carousel slideTitle={"Recently Viewed"}>
+                    {shoes.map(shoe => {
+                        return (
+                            <ShoeCard key={shoe.id} shoe={shoe} inSlide />
+                        )
+                    })}
+                </Carousel>
+            </div>
 
             <Modal
                 open={open}
@@ -105,7 +107,7 @@ const ProductPage = () => {
                 <p className='text-14-1b'>Taxes and shipping fee will be calculated at checkout</p>
                 <Divider />
 
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-4">
                     <Button size="large" block onClick={() => handleRedirect("/cart")}>View cart</Button>
                     <Button size="large" type='primary' block onClick={() => handleRedirect("/checkout")}>Checkout</Button>
                 </div>

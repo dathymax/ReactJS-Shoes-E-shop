@@ -16,7 +16,7 @@ const ProductInformations = ({ handleOpen = () => { } }) => {
             <div className='flex items-center justify-between'>
                 <p><strong>398 </strong><strong className='text-14-5f'>products have been sold</strong></p>
 
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-4">
                     <div className='flex items-center' style={{ gap: 5 }}><FaRegHeart /> Wishlist</div>
                     <div className='flex items-center' style={{ gap: 5 }}><IoShareSocialOutline /> Share</div>
                 </div>
@@ -28,7 +28,7 @@ const ProductInformations = ({ handleOpen = () => { } }) => {
                 <ProductSizePicker />
             </div>
 
-            <div className="flex items-center gap-1 my-1">
+            <div className="flex items-center gap-4 my-4">
                 <ProductCounter />
                 <Button size="large" className='flex items-center' style={{ width: 160 }}>
                     <CiZoomIn />

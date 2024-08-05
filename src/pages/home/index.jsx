@@ -59,87 +59,87 @@ const HomePage = () => {
             <Banner />
 
             <div className="container">
-                <Carousel slideTitle={"Best Selling"}>
-                    {shoes.map(shoe => {
-                        return (
-                            <ShoeCard inSlide key={shoe.id} shoe={shoe} />
-                        )
-                    })}
-                </Carousel>
+                <section className="content">
+                    <Carousel slideTitle={"Best Selling"}>
+                        {shoes.map(shoe => {
+                            return (
+                                <ShoeCard inSlide key={shoe.id} shoe={shoe} />
+                            )
+                        })}
+                    </Carousel>
+                </section>
 
-                <div className="h-2"></div>
+                <section className="content">
+                    <h2 className='text-24'>Categories</h2>
 
-                <h2 className='text-24'>Categories</h2>
+                    <div className="home__categories">
+                        {categories.map(category => {
+                            return (
+                                <CategoryItem key={category.id} category={category} />
+                            )
+                        })}
+                    </div>
+                </section>
 
-                <div className="home__categories">
-                    {categories.map(category => {
-                        return (
-                            <CategoryItem key={category.id} category={category} />
-                        )
-                    })}
-                </div>
+                <section className="content">
+                    <img src={discount} alt="Discount banner" />
+                </section>
 
-                <div className="h-4"></div>
+                <section className="content">
+                    <Carousel slideTitle={"New Arrived"}>
+                        {shoes.map(shoe => {
+                            return (
+                                <ShoeCard inSlide key={shoe.id} shoe={shoe} />
+                            )
+                        })}
+                    </Carousel>
+                </section>
 
-                <img src={discount} alt="Discount banner" />
+                <section className="content">
+                    <Carousel slideTitle={"Flash Sale"}>
+                        {shoes.map(shoe => {
+                            return (
+                                <ShoeCard inSlide key={shoe.id} shoe={shoe} />
+                            )
+                        })}
+                    </Carousel>
+                </section>
 
-                <div className="h-3"></div>
+                <section className="content">
+                    <h2 className='text-24'>Gallery</h2>
 
-                <Carousel slideTitle={"New Arrived"}>
-                    {shoes.map(shoe => {
-                        return (
-                            <ShoeCard inSlide key={shoe.id} shoe={shoe} />
-                        )
-                    })}
-                </Carousel>
+                    <div className="home__gallery flex items-center gap-4">
+                        <img src={gallery1} alt="Gallery 1" />
+                        <img src={gallery2} alt="Gallery 2" />
+                    </div>
+                </section>
 
-                <div className="h-1"></div>
+                <section className="content">
+                    <h2 className='text-24'>News</h2>
 
-                <Carousel slideTitle={"Flash Sale"}>
-                    {shoes.map(shoe => {
-                        return (
-                            <ShoeCard inSlide key={shoe.id} shoe={shoe} />
-                        )
-                    })}
-                </Carousel>
+                    <div className="home__news">
+                        {news.map(newsItem => {
+                            return (
+                                <NewsItem key={newsItem.id} news={newsItem} />
+                            )
+                        })}
+                    </div>
+                </section>
 
-                <div className="h-2"></div>
+                <section className="content">
+                    <div className="home__services">
+                        {services.map(service => {
+                            return (
+                                <div key={service.id} className="home__service">
+                                    <img src={service.img} alt="Service" />
 
-                <h2 className='text-24'>Gallery</h2>
-
-                <div className="home__gallery flex items-center gap-1">
-                    <img src={gallery1} alt="Gallery 1" />
-                    <img src={gallery2} alt="Gallery 2" />
-                </div>
-
-                <div className="h-3"></div>
-
-                <h2 className='text-24'>News</h2>
-
-                <div className="home__news">
-                    {news.map(newsItem => {
-                        return (
-                            <NewsItem key={newsItem.id} news={newsItem} />
-                        )
-                    })}
-                </div>
-
-                <div className="h-3"></div>
-
-                <div className="home__services">
-                    {services.map(service => {
-                        return (
-                            <div key={service.id} className="home__service">
-                                <img src={service.img} alt="Service" />
-
-                                <p>{service.title}</p>
-                                <span>{service.content}</span>
-                            </div>
-                        )
-                    })}
-                </div>
-
-                <div className="h-5"></div>
+                                    <p>{service.title}</p>
+                                    <span>{service.content}</span>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </section>
             </div>
         </section>
     )

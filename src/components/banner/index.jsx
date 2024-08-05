@@ -19,7 +19,7 @@ const Banner = () => {
                 </h1>
                 <p>Be different with the Nike shoe collection</p>
 
-                <div className="h-4"></div>
+                <div className="h-10"></div>
 
                 <Button
                     type='primary'
