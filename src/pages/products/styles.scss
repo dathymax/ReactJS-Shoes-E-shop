@@ -1,0 +1,25 @@
+.products {
+    padding-bottom: 80px;
+
+    &__search {
+        padding: 80px 0;
+
+        &-input {
+            padding: 12px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 600px;
+            margin: auto;
+            border-bottom: 1px solid #bbb;
+
+            input {
+                font-size: 24px;
+                border: none;
+                outline: none;
+                flex: 1;
+            }
+        }
+    }
+}

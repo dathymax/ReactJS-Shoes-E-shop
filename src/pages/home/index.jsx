@@ -62,7 +62,7 @@ const HomePage = () => {
                 <Carousel slideTitle={"Best Selling"}>
                     {shoes.map(shoe => {
                         return (
-                            <ShoeCard key={shoe.id} shoe={shoe} />
+                            <ShoeCard inSlide key={shoe.id} shoe={shoe} />
                         )
                     })}
                 </Carousel>
@@ -88,7 +88,7 @@ const HomePage = () => {
                 <Carousel slideTitle={"New Arrived"}>
                     {shoes.map(shoe => {
                         return (
-                            <ShoeCard key={shoe.id} shoe={shoe} />
+                            <ShoeCard inSlide key={shoe.id} shoe={shoe} />
                         )
                     })}
                 </Carousel>
@@ -98,7 +98,7 @@ const HomePage = () => {
                 <Carousel slideTitle={"Flash Sale"}>
                     {shoes.map(shoe => {
                         return (
-                            <ShoeCard key={shoe.id} shoe={shoe} />
+                            <ShoeCard inSlide key={shoe.id} shoe={shoe} />
                         )
                     })}
                 </Carousel>

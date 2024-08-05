@@ -55,8 +55,6 @@ const Navigation = () => {
                 </ul>
 
                 <div className="flex items-center gap-2">
-                    <Search />
-
                     <Favourite />
 
                     <Cart />

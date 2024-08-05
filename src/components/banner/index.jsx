@@ -26,7 +26,7 @@ const Banner = () => {
                     size='large'
                     style={{ width: 295 }}
                     className='flex items-center'
-                    onClick={() => navigate("/search")}
+                    onClick={() => navigate("/products")}
                 >
                     Explore now
                     <img src={arrowRight} alt="Arrow right" style={{ width: 16 }} />
