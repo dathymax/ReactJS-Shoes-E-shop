@@ -442,6 +442,11 @@ body {
             font-size: 16px;
             color: #5F5F5F;
         }
+
+        &-semi {
+            font-size: 16px;
+            font-weight: 600;
+        }
     }
 
     &-20 {
@@ -501,6 +506,10 @@ body {
     &-ellipsis {
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    &-red {
+        color: #F04438;
     }
 }
 
