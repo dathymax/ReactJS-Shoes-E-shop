@@ -1,19 +1,14 @@
 import React, { useState } from 'react'
-import cart from "../../../assets/icon/ShoppingCart.png"
+import cart from "../../../assets/icon/ShoppingCart.svg"
 import { Button, Divider, Drawer, Modal } from 'antd';
 import ProductInShortcutCart from '../../../components/product/InShortcutCart';
-import product1 from "../../../assets/shoes/in-cart/has-discount.png";
-import product2 from "../../../assets/shoes/in-cart/no-discount.png";
 import { useNavigate } from 'react-router-dom';
 import ProductRemove from '../../../components/product/Remove';
+import { productCart } from '../../../data/data';
 
 const Cart = () => {
     const [open, setOpen] = useState(false);
     const [openClear, setOpenClear] = useState(false);
-    const productCart = [
-        { id: 1, img: product1, category: "Spring Collection", shoeName: "Nike Template", price: 400, quantity: 3, originalPrice: 900 },
-        { id: 2, img: product2, category: "Spring Collection", shoeName: "Vans Ode", price: 400, quantity: 3 },
-    ];
     const navigate = useNavigate();
 
     const handleRedirect = (path) => {
@@ -40,7 +35,7 @@ const Cart = () => {
 
                 {productCart.map(product => {
                     return (
-                        <ProductInShortcutCart product={product} />
+                        <ProductInShortcutCart key={product.id} product={product} />
                     )
                 })}
 
@@ -53,7 +48,7 @@ const Cart = () => {
                 <p className='text-14-1b'>Taxes and shipping fee will be calculated at checkout</p>
                 <Divider />
 
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-4">
                     <Button size="large" block onClick={() => handleRedirect("/cart")}>View cart</Button>
                     <Button size="large" type="primary" block onClick={() => handleRedirect("/checkout")}>Checkout</Button>
                 </div>

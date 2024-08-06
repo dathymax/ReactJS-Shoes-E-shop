@@ -1,6 +1,6 @@
 import React from 'react'
-import heart from "../../assets/icon/heart-black.png"
-import heartFilled from "../../assets/icon/heart-filled.png"
+import heart from "../../assets/icon/heart-black.svg"
+import heartFilled from "../../assets/icon/heart-filled.svg"
 
 const ShoeTagIsFavorite = ({ isFav = false }) => {
     return (

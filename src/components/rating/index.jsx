@@ -1,8 +1,8 @@
 import React from 'react'
-import starFilled from "../../assets/icon/star-filled.png"
-import starNotFilled from "../../assets/icon/star-no-filled.png"
-import starFilledBlack from "../../assets/icon/star-black.png"
-import starNotFilledBlack from "../../assets/icon/star-no-filled-gray.png"
+import starFilled from "../../assets/icon/star-filled.svg"
+import starNotFilled from "../../assets/icon/star-no-filled.svg"
+import starFilledBlack from "../../assets/icon/star-black.svg"
+import starNotFilledBlack from "../../assets/icon/star-no-filled-gray.svg"
 import { useAppContext } from '../../contexts/app'
 
 const Rating = ({ rated = 0, readOnly = false }) => {

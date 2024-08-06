@@ -50,7 +50,7 @@ const RegisterForm = () => {
                 <Input.Password size="large" placeholder='Password' />
             </Form.Item>
 
-            <div className="h-1"></div>
+            <div className="h-4"></div>
 
             <Button block type='primary' size='large' htmlType='submit'>Register</Button>
         </div>

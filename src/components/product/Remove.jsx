@@ -1,5 +1,5 @@
 import React from 'react'
-import remove from "../../assets/actions/remove.png"
+import remove from "../../assets/actions/remove.svg"
 
 const ProductRemove = ({ isAll = true }) => {
     return (

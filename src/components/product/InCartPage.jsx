@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import note from "../../assets/icon/note.png"
-import trash from "../../assets/icon/trash.png"
+import note from "../../assets/icon/note.svg"
+import trash from "../../assets/icon/trash.svg"
 import { Button, Divider, Modal } from 'antd';
 import ProductInfoInCartPage from './InfoInCartPage';
 import ProductColorPicker from './ColorPicker';

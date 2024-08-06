@@ -1,0 +1,11 @@
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    border-radius: 8px;
+    gap: 3px;
+    background-color: #F4F4F4;
+    color: var(--primary);
+    cursor: pointer;
+}

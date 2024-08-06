@@ -1,6 +1,6 @@
 import React from 'react'
 import "./styles.scss"
-import logo from "../../assets/Logo-footer.png"
+import logo from "../../assets/Logo-footer.svg"
 import FooterSocials from './components/Socials'
 import { IoMailOutline } from "react-icons/io5";
 
@@ -40,7 +40,7 @@ const LayoutFooter = () => {
                 <div className='container footer__inner'>
                     <div className="footer__contact">
                         <img src={logo} alt="Logo footer" />
-                        <div className="h-1"></div>
+                        <div className="h-4"></div>
                         <p className='text-14-bbb'>Address: 380 Quan Hoa, Cau Giay, Hanoi</p>
                         <p className='text-14-bbb'>Hotline: 1800.808.88</p>
                         <p className='text-14-bbb'>Email: info@sneakers.vn</p>

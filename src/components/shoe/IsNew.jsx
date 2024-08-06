@@ -1,5 +1,5 @@
 import React from 'react'
-import fire from "../../assets/icon/Fire.png"
+import fire from "../../assets/icon/Fire.svg"
 
 const ShoeTagIsNew = () => {
     return (

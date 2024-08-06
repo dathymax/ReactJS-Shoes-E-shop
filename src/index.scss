@@ -25,6 +25,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ul li {
+    list-style: none;
+}
+
 .border {
     &-none {
         border: none;
@@ -40,6 +44,10 @@ body {
     &-transparent {
         background-color: transparent;
         color: var(--gray);
+    }
+
+    &-white {
+        background-color: #fff;
     }
 }
 
@@ -93,6 +101,10 @@ body {
     &-10 {
         height: 2.5rem;
     }
+
+    &-12 {
+        height: 3rem;
+    }
 }
 
 .flex {
@@ -138,7 +150,7 @@ body {
 
 .font {
     &-semi {
-        font-weight: 500;
+        font-weight: 600;
     }
 
     &-bold {
@@ -178,6 +190,14 @@ body {
     &-8 {
         gap: 2rem;
     }
+
+    &-9 {
+        gap: 2.25rem;
+    }
+
+    &-10 {
+        gap: 2.5rem;
+    }
 }
 
 .grid {
@@ -198,6 +218,10 @@ body {
 
         &-4 {
             grid-template-columns: repeat(4, 1fr);
+        }
+
+        &-5 {
+            grid-template-columns: repeat(5, 1fr);
         }
     }
 
@@ -330,6 +354,18 @@ body {
 
         &-5 {
             margin-block: 1.25rem;
+        }
+
+        &-6 {
+            margin-block: 1.5rem;
+        }
+
+        &-7 {
+            margin-block: 1.75rem;
+        }
+
+        &-8 {
+            margin-block: 2rem;
         }
     }
 
@@ -521,6 +557,11 @@ body {
         &-5f {
             font-size: 16px;
             color: #5F5F5F;
+        }
+
+        &-a0 {
+            color: #A0A8B0;
+            font-size: 16px;
         }
 
         &-semi {

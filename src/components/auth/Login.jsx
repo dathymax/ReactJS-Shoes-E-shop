@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../assets/Logo-auth.png"
+import logo from "../../assets/Logo-auth.svg"
 import "./styles.scss"
 import { Button, Checkbox, Form, Input } from 'antd'
 
@@ -43,7 +43,7 @@ const LoginForm = () => {
                 <p className='cursor-pointer'>Forgot password</p>
             </div>
 
-            <div className="h-1"></div>
+            <div className="h-4"></div>
 
             <Button block type='primary' size='large' htmlType='submit'>Sign in</Button>
         </div>

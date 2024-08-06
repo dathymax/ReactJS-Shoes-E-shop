@@ -4,17 +4,16 @@ import ProductImages from './components/Images'
 import ProductInformations from './components/Informations'
 import Carousel from '../../components/carousel'
 import ShoeCard from '../../components/shoe/Card'
-import { shoes } from '../home'
 import { Button, Divider, Modal } from 'antd'
 import Tabs from '../../components/tabs'
 import ProductReviews from './components/Reviews'
 import ProductShippingAndReturns from './components/ShippingAndReturns'
-import tickSuccess from "../../assets/icon/tick-circle-success.png"
-import productCart from "../../assets/cart/product.png"
+import tickSuccess from "../../assets/icon/tick-circle-success.svg"
 import product1 from "../../assets/shoes/in-cart/has-discount.png";
 import product2 from "../../assets/shoes/in-cart/no-discount.png";
 import ProductInShortcutCart from "../../components/product/InShortcutCart";
 import { useNavigate } from 'react-router-dom';
+import { shoes } from '../../data/data'
 
 const ProductPage = () => {
     const productTabs = [
@@ -94,7 +93,7 @@ const ProductPage = () => {
             >
                 {productCart.map(product => {
                     return (
-                        <ProductInShortcutCart product={product} />
+                        <ProductInShortcutCart key={product.id} product={product} />
                     )
                 })}
 

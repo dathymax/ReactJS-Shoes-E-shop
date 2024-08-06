@@ -1,20 +1,13 @@
 import React, { useState } from 'react'
 import "./styles.scss"
-import product1 from "../../assets/shoes/in-cart/no-discount-1.png"
-import product2 from "../../assets/shoes/in-cart/no-discount-2.png"
-import product3 from "../../assets/shoes/in-cart/no-discount-3.png"
 import ProductInCartPage from '../../components/product/InCartPage'
 import { Button, Modal } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import ProductRemove from '../../components/product/Remove'
-import CartEmpty from '../../components/cart/Empty'
+import { productCart } from '../../data/data'
+import Empty from '../../components/cart/Empty'
 
 const CartPage = () => {
-    const productCart = [
-        { id: 1, img: product1, category: "Nike Collection", shoeName: "Nike Template", price: 400, quantity: 3, originalPrice: 900, colorHex: "#171415", colorName: "Black", size: 43 },
-        { id: 2, img: product2, category: "Nike Collection", shoeName: "Converse Booya", price: 400, quantity: 3, colorHex: "#91A3A8", colorName: "Light green", size: 43 },
-        { id: 3, img: product3, category: "Nike Collection", shoeName: "Mcde ijue", price: 400, quantity: 3, colorHex: "#171415", colorName: "Black", size: 43 },
-    ];
     const navigate = useNavigate();
     const [openClear, setOpenClear] = useState(false);
 
@@ -70,7 +63,7 @@ const CartPage = () => {
                         <Button size="large" block onClick={() => setOpenClear(false)}>Cancel</Button>
                     </div>
                 </Modal>
-            </> : <CartEmpty />}
+            </> : <Empty title='Empty shopping cart' description="You don't have any products in your cart." />}
         </section>
     )
 }

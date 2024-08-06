@@ -1,0 +1,23 @@
+@mixin success-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #F4F4F4;
+}
+
+.checkout-success {
+    background-color: #FAFAFA;
+    padding: 80px 0;
+
+    &__content {
+        width: 610px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin: auto;
+    }
+
+    .success-section {
+        @include success-section;
+    }
+}

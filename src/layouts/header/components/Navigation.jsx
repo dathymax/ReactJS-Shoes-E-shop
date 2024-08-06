@@ -1,12 +1,11 @@
 import React from 'react'
-import logo from "../../../assets/Logo.png"
+import logo from "../../../assets/Logo.svg"
 import { useNavigate } from 'react-router-dom'
-import Search from './Search'
 import Favourite from './Favourite'
 import Cart from './Cart'
-import fire from "../../../assets/icon/Fire.png"
+import fire from "../../../assets/icon/Fire.svg"
 import AuthService from './Auth'
-import arrowDown from "../../../assets/icon/arrow-down.png"
+import arrowDown from "../../../assets/icon/arrow-down.svg"
 
 const navItems = [
     {

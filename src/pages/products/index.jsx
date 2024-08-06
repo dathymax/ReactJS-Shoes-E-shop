@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import "./styles.scss"
-import searchProducts from "../../assets/icon/search-products.png"
+import searchProducts from "../../assets/icon/search-normal.svg"
 import FilterPrices from '../../components/filters/Prices';
 import FilterSizes from '../../components/filters/Sizes';
 import FilterBrands from '../../components/filters/Brands';

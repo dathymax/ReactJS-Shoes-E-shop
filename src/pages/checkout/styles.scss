@@ -1,0 +1,105 @@
+@mixin checkout-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #F4F4F4;
+}
+
+.checkout-page {
+    background-color: #FAFAFA;
+    padding: 80px 0;
+
+    &__step-number {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    &__summary-order {
+        @include checkout-section;
+        width: 100%;
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+            td {
+                border-bottom: 1px solid #E8E8E8;
+                padding: 20px 0;
+
+                &:first-child {
+                    padding-right: 40px;
+                }
+
+                &:not(:first-child) {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__shipping-details {
+        @include checkout-section;
+        width: 100%;
+    }
+
+    &__price-summary {
+        width: 485px;
+        @include checkout-section;
+    }
+
+    &__payment-method {
+        @include checkout-section;
+        flex: 1;
+
+        .ant-collapse {
+            border-color: #F4F4F4;
+            overflow: hidden;
+
+            .ant-collapse-header {
+                background-color: #fff;
+            }
+
+            .ant-collapse-content {
+                border: none;
+            }
+        }
+    }
+
+    .expedition {
+        &__item {
+            padding: 13px;
+            border: 1px solid #F4F4F4;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            &.active {
+                border-color: var(--primary);
+            }
+        }
+    }
+
+    .payment__item {
+        padding: 13px;
+        border: 1px solid #F4F4F4;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .ant-radio-wrapper {
+        flex-direction: row-reverse;
+        align-items: center;
+
+        &>span:not(span.ant-radio) {
+            width: 100%;
+        }
+    }
+}

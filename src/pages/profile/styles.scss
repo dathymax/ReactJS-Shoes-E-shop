@@ -1,0 +1,43 @@
+.profile {
+
+    table {
+        width: 100%;
+
+        th {
+            text-align: left;
+            font-size: 16px;
+            color: #A0A8B0;
+            padding: 10px 0;
+        }
+    }
+}
+
+.ordered {
+
+    &__status {
+        padding: 6px 35px;
+        background-color: #F4F5F6;
+        color: #000;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        td {
+            border-bottom: 1px solid #E8E8E8;
+            padding: 20px 0;
+
+            &:first-child {
+                padding-right: 40px;
+            }
+
+            &:not(:first-child) {
+                font-weight: 600;
+            }
+        }
+    }
+}

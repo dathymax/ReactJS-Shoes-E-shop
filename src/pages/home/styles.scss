@@ -31,6 +31,12 @@
     }
 
     &__service {
+
+        .img__wrapper {
+            background-color: #EDEDED;
+            border-radius: 8px;
+        }
+
         img {
             width: 100%;
             height: 280px;

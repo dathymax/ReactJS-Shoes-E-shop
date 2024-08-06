@@ -2,7 +2,7 @@ import React from 'react'
 import banner from "../../assets/banner/BannerImage.png"
 import "./styles.scss"
 import { Button } from 'antd'
-import arrowRight from "../../assets/icon/ArrowRight.png"
+import arrowRight from "../../assets/icon/ArrowRight.svg"
 import { useNavigate } from 'react-router-dom'
 
 const Banner = () => {

@@ -1,10 +1,15 @@
 import React from 'react'
-import { shoes } from '../../pages/home'
 import ShoeCard from '../shoe/Card'
+import { shoes } from '../../data/data'
 
-const ListProduct = () => {
+const ListProduct = ({ listCol = 3 }) => {
+
+    const getListCol = () => {
+        return `grid-cols-${listCol}`
+    }
+
     return (
-        <div className='grid grid-cols-3 gap-5'>
+        <div className={`grid gap-5 ${getListCol()}`}>
             {
                 shoes.map(shoe => {
                     return (

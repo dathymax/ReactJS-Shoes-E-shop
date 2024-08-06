@@ -1,8 +1,8 @@
 import React from 'react'
-import instagram from "../../../assets/icon/instagram.png"
-import facebook from "../../../assets/icon/facebook.png"
-import twitter from "../../../assets/icon/twitter.png"
-import tiktok from "../../../assets/icon/tiktok.png"
+import instagram from "../../../assets/icon/instagram.svg"
+import facebook from "../../../assets/icon/facebook.svg"
+import twitter from "../../../assets/icon/twitter.svg"
+import tiktok from "../../../assets/icon/tiktok.svg"
 
 const socials = [
     { id: 1, img: instagram, name: "Instagram" },
